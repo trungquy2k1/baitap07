@@ -28,32 +28,35 @@ const Home =({navigation})=>{
                 <View style={styles.category}>
                     <View style ={styles.house}>
 
-                    <TouchableOpacity  onPress={() => navigation.navigate("Houses")}>
-                    <Image 
+                      <TouchableOpacity  onPress={() => navigation.navigate("Houses")}>
+                      
+                         <Image 
                             source={require('../assets/categori/1.png')}
                             style={styles.anhcategory}
-                        />
-                    
-                  </TouchableOpacity>
+                          />
+                     </TouchableOpacity>
 
-
-                        
-                    
                     </View>
 
                     <View style ={styles.house}>
-                        <Image 
+                     <TouchableOpacity  onPress={() => navigation.navigate("Apartments")}>
+                     
+                      <Image 
                             source={require('../assets/categori/2.png')}
                             style={styles.anhcategory}
                         />
+                      </TouchableOpacity>
                       
                     </View>
 
                     <View style ={styles.house}>
+                    <TouchableOpacity  onPress={() => navigation.navigate("Apartments")}>
+
                         <Image 
-                            source={require('../assets/categori/1.png')}
-                            style={styles.anhcategory}
+                            source={require('../assets/categori/2.png')}
+                            style={styles.anhcategory1}
                         />
+                    </TouchableOpacity>
                      
                     </View>
                 </View>
@@ -67,51 +70,63 @@ const Home =({navigation})=>{
                 <View style={{flexDirection:'row'}}>
                 <View style={styles.sphouse}>
                    <View style={styles.sp}>
+                   <TouchableOpacity  onPress={() => navigation.navigate("Houses")}>
+                     
                         <Image style={styles.houses}
                             source={require('../assets/categori/4.png')}
                         />
-                        <Text style={{marginLeft:30}}>One Mission Bay</Text>
-                        <Text style={{marginLeft:30}}>San Francisco, CA</Text>
+                        <Text style={styles.misson1}>One Mission Bay</Text>
+                        <Text style={styles.misson2}>San Francisco, CA</Text>
+                     </TouchableOpacity>
                     </View> 
                 </View>
                 <View style={styles.sphouse}>
                    <View style={styles.sp}>
+                   <TouchableOpacity  onPress={() => navigation.navigate("Houses")}>
+                    
                         <Image  style={styles.houses}
                             source={require('../assets/categori/5.png')}
                         />
                         
-                        <Text style={{marginLeft:30}}>One Mission Bay </Text>
-                        <Text style={{marginLeft:30}}>San Francisco, CA</Text>
+                        <Text style={styles.misson1}>1410 Stayner ST </Text>
+                        <Text style={styles.misson2}>San Francisco, CA</Text>
                         
+                     </TouchableOpacity>
                     </View> 
                 </View>
                 </View>
                 <View style={{flexDirection:'row'}}>
                 <View style={styles.sphouse}>
                    <View style={styles.sp}>
+                   <TouchableOpacity  onPress={() => navigation.navigate("Houses")}>
+                     
                         <Image style={styles.houses}
                             source={require('../assets/categori/6.png')}
                         />
-                        <Text style={{marginLeft:30}}>One Mission Bay</Text>
-                        <Text style={{marginLeft:30}}>San Francisco, CA</Text>
+                        <Text style={styles.misson1}>246 Suses St</Text>
+                        <Text style={styles.misson2}>San Francisco, CA</Text>
+                     </TouchableOpacity>
                     </View> 
                 </View>
                 <View style={styles.sphouse}>
                    <View style={styles.sp}>
+                   <TouchableOpacity  onPress={() => navigation.navigate("Houses")}>
+                    
                         <Image  style={styles.houses}
                             source={require('../assets/categori/7.png')}
                         />
                         
-                        <Text style={{marginLeft:30}}>One Mission Bay </Text>
-                        <Text style={{marginLeft:30}}>San Francisco, CA</Text>
+                        <Text style={styles.misson1}>1206 Maket ST </Text>
+                        <Text style={styles.misson2}>San Francisco, CA</Text>
+                     </TouchableOpacity>
                         
                     </View> 
                 </View>
                 
                 </View>
 
-                <TouchableOpacity style={styles.btn}>
-                        <Text style={{textAlign:'center', fontSize:20, color:'#20C065',marginTop:5}}>Show all(7) </Text>
+                <TouchableOpacity onPress={() => navigation.navigate("Houses")} style={styles.btn}>
+                        <Text style={{textAlign:'center', fontSize:20, color:'#20C065',marginTop:8}}>Show all(6) </Text>
                     </TouchableOpacity>
                 
             </ScrollView>
@@ -133,7 +148,13 @@ const styles = StyleSheet.create({
     category:{
         flexDirection:'row',
         justifyContent:'space-between'
+
     },
+    // category1:{
+    //     flexDirection:'row',
+    //     justifyContent:'space-between',
+    //     height:30
+    // },
     house:{
         borderColor:'black',
         borderWidth:0.1,
@@ -158,10 +179,19 @@ const styles = StyleSheet.create({
         borderWidth:1.5,
         borderRadius:5,
         width:'90%',
-        height:40,
+        height:50,
         marginHorizontal:17,
-        marginTop:5,
+        marginTop:26,
     },
-    
+    sp:{
+        marginTop:20,
+    },
+    misson1:{
+        marginLeft:40,
+        fontWeight:600
+    },
+    misson2:{
+        marginLeft:35,
+    }
 })
 export default Home;

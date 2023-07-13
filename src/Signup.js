@@ -49,13 +49,13 @@ const styles=StyleSheet.create({
         backgroundColor:'white',
       },
       title: {
-        color: '#5EA33A',
+        color: '#20C065',
         fontSize: 24,
         marginBottom:100,
         paddingRight:180,
       },
       title1: {
-        marginTop:-10,
+        marginTop:10,
       },
       input1: {
         height: 50,
@@ -73,7 +73,7 @@ const styles=StyleSheet.create({
         margin: 30,
         justifyContent: "center",
         alignItems: 'center',
-        backgroundColor: "#344D91",
+        backgroundColor: "#20C065",
         marginBottom: 130,
         color: "white"
       },

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View,Image } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -25,10 +25,36 @@ const Stack = createNativeStackNavigator();
 const StackScreen=() =>{
   return(
     <Tab.Navigator initialRouteName='Home' >
-           <Tab.Screen name="Home" component={Home} />
-           <Tab.Screen name="Collection" component={Collections} />
-           <Tab.Screen name="Saved" component={Saved} />
-           <Tab.Screen name="Search" component={Search} />
+           <Tab.Screen name="Home" component={Home}
+           options={{tabBarIcon: () => 
+          <Image
+            source={require('./assets/categori/icon4.png')}
+            style={{height:30,width:30}}resizeMode="stretch"
+            />}}
+            />
+           <Tab.Screen name="Collection" component={Collections}
+            options={{tabBarIcon: () => 
+          <Image
+            source={require('./assets/categori/icon5.png')}
+            style={{height:30,width:30}}resizeMode="stretch"
+            />}}
+            />
+           <Tab.Screen name="Saved" component={Saved} 
+            options={{tabBarIcon: () => 
+          <Image
+            source={require('./assets/categori/icon6.png')}
+            style={{height:30,width:30}}resizeMode="stretch"
+            />}}
+
+           />
+           <Tab.Screen name="Search" component={Search} 
+           options={{tabBarIcon: () => 
+          <Image
+            source={require('./assets/categori/icon7.png')}
+            style={{height:30,width:30}}resizeMode="stretch"
+            />}}
+
+           />
     </Tab.Navigator>
   );
 }

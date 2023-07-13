@@ -8,19 +8,19 @@ import { createMaterialBottomTabNavigator } from '@react-navigation/material-bot
 const Collections =({navigation})=>{
     return(
         
-        <ScrollView >
+        <View >
         <View style={{  justifyContent: 'space-between', marginVertical:20}}>
            
             <Text style={{fontSize: 20, textAlign:'center'}}>Categories </Text>
            
         </View>
           
-            <View style={styles.container}>
-            <ScrollView>
+            <ScrollView style={styles.container}>
+            <View>
                 <View style={styles.sphouse}>
                    <View style={styles.sp}>
                         <Image style={styles.houses}
-                            source={require('../assets/categori/8.png')}
+                            source={require('../assets/collections/8.png')}
                         />
                         
                     </View> 
@@ -30,7 +30,7 @@ const Collections =({navigation})=>{
                     
                    <View style={styles.sp}>
                         <Image  style={styles.houses}
-                            source={require('../assets/categori/9.png')}
+                            source={require('../assets/collections/9.png')}
                         />
                     </View> 
                  </TouchableOpacity>
@@ -40,14 +40,14 @@ const Collections =({navigation})=>{
                 <View style={styles.sphouse}>
                    <View style={styles.sp}>
                         <Image style={styles.houses}
-                            source={require('../assets/categori/10.png')}
+                            source={require('../assets/collections/10.png')}
                         />
                     </View> 
                 </View>
                 <View >
                    <View style={styles.sp}>
                         <Image  style={styles.houses}
-                            source={require('../assets/categori/11.png')}
+                            source={require('../assets/collections/11.png')}
                         />
                         
                     </View> 
@@ -55,22 +55,23 @@ const Collections =({navigation})=>{
                 <View style={styles.sphouse}>
                    <View style={styles.sp}>
                         <Image style={styles.houses}
-                            source={require('../assets/categori/12.png')}
+                            source={require('../assets/collections/12.png')}
                         />
                     </View> 
                 </View>
                 <View >
                    <View style={styles.sp}>
+                    
                         <Image  style={styles.houses}
-                            source={require('../assets/categori/11.png')}
+                            source={require('../assets/collections/10.png')}
                         />
                         
                     </View> 
                 </View>
                
-            </ScrollView>
             </View>
-        </ScrollView>
+            </ScrollView>
+        </View>
     )
 }
 const styles = StyleSheet.create({

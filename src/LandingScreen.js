@@ -5,21 +5,15 @@ import Signin from './Signin';
 export default function LandingScreen({ navigation }) { // truyền navigation qua props
   return (
     <View style={styles.container}>
-      <Image
-        style={styles.tinyLogo}
-        source={require('../assets/categori/1.png')}
-      />
+      
+      
       <View>
-        <Text style={styles.box1}>Browse  Food</Text>
-      </View>
+        <Text style={styles.box2}>Hello</Text>
       <View>
-        <Text style={styles.box2}>Welcome to our restaurant app! Log in
-        and check  out our delicious food.</Text>
-        <View>
       <TouchableOpacity style={styles.but1}
          onPress={() => navigation.navigate("Signin")}
       >
-        <Text style={styles.but2}>Sign In</Text>
+        <Text style={styles.but2}>Log In</Text>
       </TouchableOpacity>
     </View>
 
@@ -64,12 +58,13 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   box2: {
-    color: 'black',
+    color: '#20C065',
     textAlign: 'center',
-    marginTop: 20,
-    fontSize: 18,
+    
+    fontSize: 30,
     alignItems: 'center',
-    marginBottom: 20,
+    marginBottom: 60,
+    fontWeight:500,
 
   },
   but1: {
@@ -79,7 +74,7 @@ const styles = StyleSheet.create({
     margin: 20,
     justifyContent: "center",
     alignItems: 'center',
-    backgroundColor: "#5EA33A",
+    backgroundColor: "#20C065",
     marginBottom: 10,
     color: "white"
   },
@@ -93,7 +88,8 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     marginBottom: 150,
     color: "white",
-    borderWidth: 1
+    borderWidth: 1,
+    borderColor:"#20C065",
   },
   but2: {
     color: 'white',

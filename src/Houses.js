@@ -22,11 +22,37 @@ const Tab = createMaterialBottomTabNavigator();
 const Houses = ({navigation}) => {
   return (
     <View style={{ flex: 1 }}>
-       <Tab.Navigator initialRouteName='Home' >
-           <Tab.Screen name="Home" component={Home} />
-           <Tab.Screen name="Collection" component={Collections} />
-           <Tab.Screen name="Saved" component={Saved} />
-           <Tab.Screen name="Search" component={Search} />
+       <Tab.Navigator initialRouteName='Collection' >
+       <Tab.Screen name="Home" component={Home}
+           options={{tabBarIcon: () => 
+          <Image
+            source={require('../assets/categori/icon4.png')}
+            style={{height:30,width:30}}resizeMode="stretch"
+            />}}
+            />
+           <Tab.Screen name="Collection" component={Collections}
+            options={{tabBarIcon: () => 
+          <Image
+            source={require('../assets/categori/icon5.png')}
+            style={{height:30,width:30}}resizeMode="stretch"
+            />}}
+            />
+           <Tab.Screen name="Saved" component={Saved} 
+            options={{tabBarIcon: () => 
+          <Image
+            source={require('../assets/categori/icon6.png')}
+            style={{height:30,width:30}}resizeMode="stretch"
+            />}}
+
+           />
+           <Tab.Screen name="Search" component={Search} 
+           options={{tabBarIcon: () => 
+          <Image
+            source={require('../assets/categori/icon7.png')}
+            style={{height:30,width:30}}resizeMode="stretch"
+            />}}
+
+           />
     </Tab.Navigator>
     </View>
   )

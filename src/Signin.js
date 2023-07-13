@@ -69,7 +69,7 @@ const styles = StyleSheet.create({
   },
   
   title: {
-    color: '#5EA33A',
+    color: '#20C065',
     fontSize: 28,
     // fontWeight: 'bold',
     marginBottom:50,
@@ -100,7 +100,7 @@ const styles = StyleSheet.create({
     marginTop:30,
     justifyContent: "center",
     alignItems: 'center',
-    backgroundColor: "#5EA33A",
+    backgroundColor: "#20C065",
     color: "white"
   },
   but3: {
@@ -110,10 +110,11 @@ const styles = StyleSheet.create({
     margin: 20,
     justifyContent: "center",
     alignItems: 'center',
-    backgroundColor: "#374B6D",
+    backgroundColor: "#3B5998",
     marginBottom: 70,
     color: "white",
-    borderWidth: 1
+    borderWidth: 0.3,
+    borderColor:'red'
   },
   but2: {
     color: 'white',
